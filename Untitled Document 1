@@ -1,0 +1,24 @@
+Roll number :137115 
+Section 	:A
+Question no.:2
+
+Answer Procedure :
+
+==>	to find n we use the fact that Z ∗ n has a generator if and only if n = 2, 4, p^k or 2p^k , where p is an odd prime and
+  	k ≥ 1
+
+==>	In my solution we took k=2 (or 3) and found a prime p using the gmp's nextprime function.
+
+==>	Now n is calculated as p^k (here we have found both p and n)
+
+==> Now we know that a generator for Zn exists as Zn is a cyclic group.
+
+
+==>	Next step is to find another prime P such that P<n I did that by using gmp's nextprime function.
+
+
+==> Now we have n & prime P, to find the generator we first break Zn in five equal groups and from each group pick a random number
+	which belongs to Zn and finally we multiply all numbers to find the Product. 
+
+	==>After finding product we apply the algorithm to decide if that product is generator or not
+	==>The algorithm used is the algorithm provided in 4.80 in the handbook.

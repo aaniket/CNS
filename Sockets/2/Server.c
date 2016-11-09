@@ -57,13 +57,9 @@ int main(int argc,char *argv[]){
 		sprintf(buffer,"%d",getRandom(gid*getRandom(gid)));
 
 		write(nsfd,buffer,strlen(buffer));
-		printf("pc:%s\n",buffer);
+		printf("pk:%s\n",buffer);
 
 	}
-
-	
-
-
 	
 	return 0;
 }
